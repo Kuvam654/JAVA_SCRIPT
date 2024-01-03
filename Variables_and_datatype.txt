@@ -1,0 +1,110 @@
+Difference between var, let and const in javascript
+
+var
+It has global scope meaning that 
+if declared outside it can be accessed outside as well as on the inside of the function.
+if declared inside the function, it cannot be accessed outside the function though, it can be accessed inside.
+It can be redeclared infinite number of times.
+
+let
+It is block scoped meaning that
+it can be accessed only inside a block example - if, for, while or any other block.
+User cannot redeclare it but can update it using +=, -= etc
+
+const
+It has exactly the same properties except the fact that it cannot be updated.
+
+
+DATA TYPES
+
+String
+-It is a sequence of characters which can store alphabets, numbers as well as symbols.
+
+Number
+-It can store numbers that include both integers, decimal.
+-It has a fixed size and can represent values from -(2^53 - 1) to 2^53 - 1.
+
+Boolean
+-It is used to make decisions. For example - True/False. 
+
+Null
+-It is the absence of value.
+
+Undefined
+-A variable which is not assigned any value.
+
+BigInt
+-It has the same function as Integer.
+-It can store greater range of numbers than integers.
+
+Symbol
+-Symbols are used to create unique identifiers, ensuring that even if two symbols have the same description,
+they are distinct entities.
+-discussed later.
+
+
+Operators
+
+Assignment Operators
+-(+) - addition
+-(-) - subtraction
+-(*) - multiplication
+-(/) - division
+-(%) - modulo
+
+Comparison Operators
+-(>) - Greater than
+-(<) - less than
+-(==) - equality
+                -It checks for value regardless of the data type.
+                -For example - 5 == "5" will return true.
+-(===) - strictly equality Operator
+                -It checks for both value and data type.
+                -For example - 5 == 5 will return true 
+                               but 5 == "5" will return false.
+-(!=) - inequality operator.
+                -It checks for value regardless of the data type.
+                -Can be understood as opposite result of equality operator.
+                -For example - 5 == "5" will return false.
+-(!==) - strictly inequality operator.
+                -It checks for both value and data type.
+                -Can be understood as opposite result of strictly equality operator.
+                -For example - 5 == 5 will return false. 
+                               but 5 == "5" will return false.
+logical Operators
+-(&&) - Both conditions has to be true.
+-(||) - Any one of the given condition must be true.
+-(!) - Returns false if condition is true.
+
+note - when we add strings with a number then the result is a string with the string and the 
+number combined in order in which they are added.
+
+Here's a table outlining operator precedence and associativity in JavaScript:
+
+------------------------------------------------------------------------------------------------------------------
+| Precedence | Operator Type             | Individual Operators                                | Associativity   |
+|------------|---------------------------|-----------------------------------------------------|-----------------|
+| 20         | Grouping                  | `()`                                                | n/a             |
+| 19         | Member Access             | `obj.prop`, `obj[method]`                           | n/a             |
+| 18         | Function Call, new        | `func()`, `new`                                     | Left-to-right   |
+| 17         | Increment/Decrement       | `++x`, `--x`, `x++`, `x--`                          | n/a             |
+| 16         | Logical/Bitwise NOT       | `!x`, `~x`                                          | n/a             |
+| 15         | Unary Plus/Minus          | `+x`, `-x`                                          | n/a             |
+| 14         | Exponentiation            | `**`                                                | Right-to-left   |
+| 13         | Multiplication/Division   | `*`, `/`, `%`                                       | Left-to-right   |
+| 12         | Addition/Subtraction      | `+`, `-`                                            | Left-to-right   |
+| 11         | Bitwise Shifts            | `<<`, `>>`, `>>>`                                   | Left-to-right   |
+| 10         | Relational Operators      | `<`, `>`, `<=`, `>=`, `in`, `instanceof`            | n/a             |
+| 9          | Equality Operators        | `==`, `===`, `!=`, `!==`                            | n/a             |
+| 8          | Bitwise AND               | `&`                                                 | Left-to-right   |
+| 7          | Bitwise XOR               | `^`                                                 | Left-to-right   |
+| 6          | Bitwise OR                | `|`                                                 | Left-to-right   |
+| 5          | Logical AND               | `&&`                                                | Left-to-right   |
+| 4          | Logical OR                | `||`                                                | Left-to-right   |
+| 3          | Conditional Operator      | `condition ? expr1 : expr2`                         | Right-to-left   |
+| 2          | Assignment Operators      | `=`, `+=`, `-=`, `*=`, `/=`, `%=`, `<<=`, `>>=`,    | Right-to-left   |
+|            |                           | `>>>=`, `&=`, `|=`, `^=`, `**=`                     |                 |
+------------------------------------------------------------------------------------------------------------------
+
+This table shows the operator precedence levels in JavaScript from highest (20) to lowest (2), along with their associativity 
+when relevant (left-to-right or right-to-left). These rules govern the order of operations in expressions containing multiple operators.
