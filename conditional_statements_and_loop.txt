@@ -1,0 +1,36 @@
+If Statement
+
+if (condition) {
+    statement
+} else if (condition) {
+    statement
+} else {
+    statement
+}
+
+Switch Statement
+
+switch (variable) {
+    case _:
+        statement
+        break;
+    case _:
+        statement
+        break
+    default:
+        statement
+}
+
+For Loop
+
+for (var i = _(variable initialization); condition; increment/decrement) {
+    statement
+}
+
+While Loop
+
+while (condition) {
+    statement
+}
+
+
