@@ -13,4 +13,10 @@ comment
 
 //Hello World Program
 console.log("hello world");
+var a = "hello";
+console.log(a.toLowerCase);
+console.log(a.toUpperCase);
+
+
+
 

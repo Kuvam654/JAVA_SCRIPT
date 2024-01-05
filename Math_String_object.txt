@@ -1,0 +1,38 @@
+Math Object
+
+01. Math.PI = 3.14159
+02. Math.E  = 2.718
+03. Math.LN2 = Natural log of 2 = 0.693
+
+04. Math.ceil() - rounds up to closest integer.
+05. Math.floor() - rounds down to closest integer.
+06. Math.round() - rounds up to closest integer if decimal is 0.5 or above otherwise rounds down.
+07. Math.trunc() - trims decimal, leaving only integer.
+
+08. Math.pow(a, b) - a raise to power b.
+09. Math.sqrt(a) - gives square root of a.
+10. Math.cbrt(a) - gives cube root of a.
+11. Math.abs(a) - if a > 0, a else if a < 0, a.
+
+12. Math.log()
+13. Math.log2()
+14. Math.log10()
+
+15. Math.min(.... , ...., ...., ...., );
+16. Math.max(...., ...., ...., ...., )
+
+17. Math.random() - gives a number between 0 and 0.99
+18. Math.sin() - similarly for other trignometric functions.
+
+String Object
+
+1. String.length; - returns length of string.
+2. String.charAt(index) - returns character at given index of string.
+3. "hello i am kuvam".indexOf('required charcter') - returns index of required character.
+4. similarly lastIndexOf gives last found index of required character. 
+5. String.split("character);
+    example - "ho-ho-ho".split("-"); returns ['ho', 'ho', 'ho']
+6. String.toUpperCase(); returns 
+7. String.toLowerCase(); returns 
+
+note- to check type of character use typeof(variable); which returns data type of variable.
