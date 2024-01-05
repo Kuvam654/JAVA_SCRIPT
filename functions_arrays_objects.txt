@@ -1,0 +1,57 @@
+functions - Block of code where you perfrom certain action.
+declaration:-
+function name_of_function(required variables) {
+    statement
+}
+calling a function:-
+name_of_function(required variables);
+
+push operation:-
+pushes the element to the end of the array.
+name_of_function.push(element);
+
+pop operation:-
+removes the last element from the array.
+name_of_function.pop()
+
+Arrays
+var/let/const array_name = [.... , ... , ...];
+note - element indexing starts with 0 and goes upto n(no of items) - 1
+
+Objects
+Collection of related properties/traits where each property is represented by a key:value pair.
+
+declaring an an object:-
+var object_name = {};
+
+declaring an object with property:-
+var object_name = {
+    property1 : value1;
+    property2 : value2;
+    and so on
+}
+
+Ways to declare an object:-
+1. Build Objects with Dot Notation
+2. Build Objects with Comma delimited key-value pair
+
+declaring an object and specifying its property outside using dot Notation
+var object_name = {};
+object_name.property1 = value1;
+object_name.property2 = value2;
+and so on
+
+declaring an object and specifying its property outside using bracket Notation
+var object_name = {};
+object_name[property1] = value1;
+object_name[property2] = value2;
+and so on
+
+Object methods
+It is just like the key value pair, the difference being the value which is a function.
+
+Object_name.property = function(condition) {
+    Statement
+} 
+calling the object method
+Object_name.property(condition if any); 
